@@ -1,0 +1,126 @@
+@media (max-width:767px) {
+    .expert-img {
+        height: 150px
+    }
+}
+
+#page-content {
+    overflow: hidden
+}
+
+.popover-new {
+    background: 0 0;
+    border: none;
+    margin-left: 10px
+}
+
+.separator-right {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 4rem
+}
+
+.separator-right:before {
+    content: '';
+    position: absolute;
+    bottom: -2rem;
+    left: 0;
+    right: -1000px;
+    height: 3px;
+    background-color: #007db3
+}
+
+.separator-right.wow:before {
+    left: 1000px
+}
+
+.separator-right.wow.animated:before {
+    left: 0;
+    -webkit-transition: left ease-out 1s;
+    transition: left ease-out 1s
+}
+
+#tt .blurb:first-child {
+    border: 1px solid #fff3f3;
+    box-shadow: 0 2px 4px 0 rgba(155, 155, 155, .5)
+}
+
+#tt .blurb {
+    padding-top: 20px;
+    padding-bottom: 20px
+}
+
+#pre-settlement img {
+    max-height: 300px
+}
+
+.expert-img {
+    background: #fff
+}
+
+.gform_button.button {
+    float: unset;
+    padding-left: 70px;
+    padding-right: 70px
+}
+
+.gform_footer.top_label:after {
+    content: "Step 1 of 2"
+}
+
+@media (max-width:768px) {
+    .casesWe h2.h3 {
+        margin-top: 50px
+    }
+    #tt .blurb {
+        margin-bottom: 1rem
+    }
+    #tt .blurb:first-child {
+        margin: 1rem;
+        padding: 1rem 0
+    }
+    .blurb-content {
+        padding-left: 1.5rem!important;
+        padding-right: 1.5rem!important
+    }
+    .blurb hr {
+        max-width: 80%
+    }
+    #pre-settlement img {
+        max-height: 200px
+    }
+    #we-fund h2 {
+        margin-top: 20px
+    }
+    .gform_footer.top_label:before {
+        content: "Step 1 of 2";
+        margin-right: calc(50% - 46px)
+    }
+    .gform_footer.top_label:after {
+        display: none
+    }
+    #abc .pt-3 p {
+        padding: 10px 20px 10px 0;
+        font-size: 16px
+    }
+    #abc .bottom-tri:after {
+        display: none
+    }
+}
+
+@media (min-width:1080px) {
+    .page-header {
+        position: relative;
+        background-position: center 38%;
+        background-repeat: no-repeat;
+        background-size: 100% auto
+    }
+    .blurb-content p,
+    #abc p {
+        font-size: 16px
+    }
+    #abc p strong,
+    .bg-info p {
+        font-size: 18px
+    }
+}

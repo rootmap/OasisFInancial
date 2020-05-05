@@ -1,0 +1,22 @@
+.faq-section .card a {
+    color: #e07733 !important
+}
+
+.gfield_description {
+    display: none !important
+}
+
+@media (max-width:450px) {
+    h5,
+    .h5 {
+        font-size: 1rem !important
+    }
+}
+
+@media (max-width:768px) {
+    #hero p.lead {
+        max-width: 88% !important
+    }
+}
+
+@media (min-width: 1080px) {}
