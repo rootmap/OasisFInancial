@@ -15,9 +15,9 @@
 									</div><!-- End column -->
 									<div class="col-md-6">
 										<div class="breadcrumb">
-											<div class="breadcrumb-item"><i class="fas fa-angle-right"></i><a href="#">Listing</a>
+											<div class="breadcrumb-item"><a href="#"><i class="fas fa-angle-right"></i>Listing</a>
 											</div>
-											<div class="breadcrumb-item active"><i class="fas fa-angle-right"></i>All
+											<div class="breadcrumb-item active">All
 											</div>
 										</div><!-- end breadcrumb -->
 									</div><!-- End column -->

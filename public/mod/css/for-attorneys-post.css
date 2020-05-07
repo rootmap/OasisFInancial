@@ -1,0 +1,29 @@
+@media (min-width:768px) {
+    .box-right {
+        background: #fff;
+        margin-bottom: -150px !important;
+    }
+}
+
+.page-header:after {
+    opacity: .4 !important;
+}
+
+.f-18 * {
+    font-size: 1.2rem
+}
+
+.gfield_description {
+    display: block !important;
+    color: #777
+}
+
+.gform_wrapper .field_description_below .gfield_description {
+    padding-top: 5px
+}
+
+.bg-md-white.shadow {
+    margin-bottom: 30px
+}
+
+@media (min-width: 1080px) {}

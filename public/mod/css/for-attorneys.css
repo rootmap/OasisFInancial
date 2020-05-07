@@ -1,0 +1,8 @@
+@media (min-width:1080px) {
+    .page-header {
+        position: relative;
+        background-position: center 19%;
+        background-repeat: no-repeat;
+        background-size: 100% auto
+    }
+}

@@ -15,9 +15,9 @@
                                     </div><!-- End column -->
                                     <div class="col-md-6">
                                         <div class="breadcrumb">
-                                            <div class="breadcrumb-item"><i class="fas fa-angle-right"></i><a href="#">CRUD Listing</a>
+                                            <div class="breadcrumb-item"><a href="#"><i class="fas fa-angle-right"></i> CRUD Listing</a>
                                             </div>
-                                            <div class="breadcrumb-item active"><i class="fas fa-angle-right"></i>Create New Feature
+                                            <div class="breadcrumb-item active">Create New Feature
                                             </div>
                                         </div><!-- end breadcrumb -->
                                     </div><!-- End column -->

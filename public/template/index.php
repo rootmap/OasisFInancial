@@ -1102,6 +1102,7 @@
 					</div>
 				</div>
 		</footer>
+	</div>
 		<script type="text/javascript">
 			function showhide_toggle(e, t, r, g) {
 				var a = jQuery("#" + e + "-link-" + t),

@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>@yield('title') | Indian Garden Norrkoping</title>
+  <title>@yield('title') | {{env('APP_NAME')}}</title>
   @yield('css')
   @include('admin.include.headerCss')
   @yield('extracss')
@@ -33,7 +33,7 @@
     <div class="float-right d-none d-sm-block">
       <b>Version</b> 3.0
     </div>
-    <strong>Copyright &copy; 2014-{{ date('Y') }} <a href="http://digimo.se/" target="_blank" >Digimo</a>.</strong> All rights
+    <strong>Copyright &copy; 2020 <a href="http://neutrix.co/" target="_blank" >Neutrix</a>.</strong> All rights
     reserved.
   </footer>
 

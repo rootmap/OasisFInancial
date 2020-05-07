@@ -500,8 +500,8 @@
 						</div>
 						<div class="col-md-6">
 							<div class=" d-flex justify-content-center align-iems-center flex-wrap  px-4">
-								<div class="w-50  px-3"> <a href="http://arclegalfunding.org/" target="_blank"> <img src="https://www.oasisfinancial.com/wp-content/uploads/2019/03/ARC-LOGO-PNG.png" alt="The Arc" class="img-fluid d-block m-auto" style="
- height: 70px;" /> </a></div>
+								<div class="w-50  px-3"> <a href="http://arclegalfunding.org/" target="_blank"> 
+								<img src="https://www.oasisfinancial.com/wp-content/uploads/2019/03/ARC-LOGO-PNG.png" alt="The Arc" class="img-fluid d-block m-auto" style="height: 70px;" /> </a></div>
 								<div class="w-50  px-3"> <a href="http://www.accessforpatients.org/" target="_blank"> <img src="https://www.oasisfinancial.com/wp-content/uploads/2019/03/keyhealth-logo-01-copy-3.png" alt="APA" class="img-fluid d-block m-auto" style=" height: 35px; position:relative; top:20px;" /> </a></div>
 							</div>
 						</div>

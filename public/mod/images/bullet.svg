@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="11px" height="11px" viewBox="0 0 11 11" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>Path</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Mockup" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-//-About-" transform="translate(-724.000000, -785.000000)" fill="#009DDC">
+            <g id="noun_triangle_1730476_000000" transform="translate(729.500000, 790.500000) rotate(90.000000) translate(-729.500000, -790.500000) translate(724.000000, 785.000000)">
+                <path d="M6.36080666,0.564102564 L10.8553266,9.32938856 C11.0482245,9.69822485 11.0482245,10.0887574 10.8553266,10.4575937 C10.6817185,10.8047337 10.373082,11 10.0065761,11 L0.998246383,11 C0.631740465,11 0.323103902,10.8047337 0.13020605,10.4575937 C-0.0434020167,10.0887574 -0.0434020167,9.69822485 0.13020605,9.32938856 L4.64401578,0.564102564 C4.81762385,0.195266272 5.12626041,0 5.49276633,0 C5.85927225,0 6.16790881,0.195266272 6.36080666,0.564102564 Z" id="Path"></path>
+            </g>
+        </g>
+    </g>
+</svg>
