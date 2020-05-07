@@ -1,0 +1,86 @@
+/*
+ * The Typekit service used to deliver this font or fonts for use on websites
+ * is provided by Adobe and is subject to these Terms of Use
+ * http://www.adobe.com/products/eulas/tou_typekit. For font license
+ * information, see the list below.
+ *
+ * adelle:
+ *   - http://typekit.com/eulas/00000000000000003b9af917
+ *   - http://typekit.com/eulas/00000000000000003b9af919
+ *   - http://typekit.com/eulas/00000000000000003b9af920
+ * proxima-nova:
+ *   - http://typekit.com/eulas/00000000000000003b9b093b
+ *   - http://typekit.com/eulas/00000000000000003b9b0939
+ *   - http://typekit.com/eulas/00000000000000003b9b0934
+ *   - http://typekit.com/eulas/00000000000000003b9b0935
+ *
+ * © 2009-2020 Adobe Systems Incorporated. All Rights Reserved.
+ */
+
+
+/*{"last_published":"2018-12-18 20:11:05 UTC"}*/
+
+@import url("./p.css");
+@font-face {
+    font-family: "proxima-nova";
+    src: url("../webfonts/00000000000000003b9b093b.woff2") format("woff2"), url("../webfonts/00000000000000003b9b093b.woff") format("woff"), url("../webfonts/00000000000000003b9b093b.eot") format("opentype");
+    font-display: auto;
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "proxima-nova";
+    src: url("../webfonts/00000000000000003b9b0939.woff2") format("woff2"), url("../webfonts/00000000000000003b9b0939.woff") format("woff"), url("../webfonts/00000000000000003b9b0939.eot") format("opentype");
+    font-display: auto;
+    font-style: normal;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "proxima-nova";
+    src: url("../webfonts/00000000000000003b9b0934.woff2") format("woff2"), url("../webfonts/00000000000000003b9b0934.woff") format("woff"), url("../webfonts/00000000000000003b9b0934.eot") format("opentype");
+    font-display: auto;
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "proxima-nova";
+    src: url("../webfonts/00000000000000003b9b0935.woff2") format("woff2"), url("../webfonts/00000000000000003b9b0935.woff") format("woff"), url("../webfonts/00000000000000003b9b0935.eot") format("opentype");
+    font-display: auto;
+    font-style: italic;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "adelle";
+    src: url("../webfonts/00000000000000003b9af917.woff2") format("woff2"), url("../webfonts/00000000000000003b9af917.woff") format("woff"), url("../webfonts/00000000000000003b9af917.eot") format("opentype");
+    font-display: auto;
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "adelle";
+    src: url("../webfonts/00000000000000003b9af919.woff2") format("woff2"), url("../webfonts/00000000000000003b9af919.woff") format("woff"), url("../webfonts/00000000000000003b9af919.eot") format("opentype");
+    font-display: auto;
+    font-style: normal;
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: "adelle";
+    src: url("../webfonts/00000000000000003b9af920.woff2") format("woff2"), url("../webfonts/00000000000000003b9af920.woff") format("woff"), url("../webfonts/00000000000000003b9af920.eot") format("opentype");
+    font-display: auto;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.tk-proxima-nova {
+    font-family: "proxima-nova", sans-serif;
+}
+
+.tk-adelle {
+    font-family: "adelle", serif;
+}

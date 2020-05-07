@@ -1,0 +1,141 @@
+.leaders .border-success ul {
+    margin-top: -15px
+}
+
+.miles .row {
+    margin-top: 20px
+}
+
+@media only screen and (max-width:995px) {
+    .miles img {
+        margin-top: 30px !important;
+        margin-bottom: 30px !important
+    }
+}
+
+.team-full {
+    padding: 130px 0;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: #133d8d
+}
+
+.team-full .team-left {
+    background: #fff;
+    border-radius: 5px;
+    padding: 25px
+}
+
+.team-wrapper img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    padding: 5px;
+    border: 5px solid #133d8d
+}
+
+.team-wrapper .single-team {
+    background-size: cover;
+    background-position: center center;
+    background-repeat;
+    no-repeat;
+    margin: 15px 0;
+    height: 250px;
+    padding: 50px 20px 20px;
+    text-align: center;
+    position: relative;
+    z-index: 0
+}
+
+.team-wrapper .single-team .team-content {
+    opacity: 0;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    color: #fff;
+    z-index: 1
+}
+
+.team-wrapper .single-team:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #133d8d;
+    opacity: 0;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    z-index: -1
+}
+
+.team-wrapper .single-team:hover .team-content {
+    opacity: 1
+}
+
+.team-wrapper .single-team .team-content p {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 300;
+    font-family: "Usual", sans-serif
+}
+
+.team-wrapper .single-team .team-content .team-name {
+    display: block;
+    font-family: "Sofia Pro", sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 700;
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+    position: relative
+}
+
+.team-wrapper .single-team .team-content .team-name:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    width: 69px;
+    background: #009ddc;
+    left: 50%;
+    transform: translateX(-50%)
+}
+
+.team-wrapper .single-team:hover:after {
+    opacity: .8
+}
+
+@media (max-width:767px) {
+    .team-wrapper .single-team {
+        margin: 1.5px 0
+    }
+    .team-wrapper .single-team:after {
+        opacity: .8
+    }
+    .team-wrapper .single-team .team-content {
+        opacity: 1
+    }
+    .team-full {
+        background-position: top center;
+        background-size: 100%;
+        padding: 160px 0 30px
+    }
+}
+
+@media (min-width:1080px) {
+    .page-header {
+        position: relative;
+        background-position: center 41%;
+        background-repeat: no-repeat;
+        background-size: 100% auto
+    }
+}

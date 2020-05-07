@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>Path</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Wireframe" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="noun_Plus_747935_000000-Copy-5" fill="#F47820">
+            <path d="M0.798968762,10.4 C0.3577105,10.4 0,10.042534 0,9.60137954 L0,8.39862046 C0,7.95755456 0.356370158,7.6 0.798968762,7.6 L7.6,7.6 L7.6,0.798968762 C7.6,0.3577105 7.95746598,0 8.39862046,0 L9.60137954,0 C10.0424454,0 10.4,0.356370158 10.4,0.798968762 L10.4,7.6 L17.2010312,7.6 C17.6422895,7.6 18,7.95746598 18,8.39862046 L18,9.60137954 C18,10.0424454 17.6436298,10.4 17.2010312,10.4 L10.4,10.4 L10.4,17.2010312 C10.4,17.6422895 10.042534,18 9.60137954,18 L8.39862046,18 C7.95755456,18 7.6,17.6436298 7.6,17.2010312 L7.6,10.4 L0.798968762,10.4 Z" id="Path"></path>
+        </g>
+    </g>
+</svg>
