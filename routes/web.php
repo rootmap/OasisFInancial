@@ -197,3 +197,82 @@ Route::post('/neversettleforless/ajax','NeversettleforlessController@ajaxSave');
 Route::post('/neversettleforless/datatable/ajax','NeversettleforlessController@datatable');
 Route::post('/neversettleforless/update/{id}','NeversettleforlessController@update');
 //======================== Neversettleforless Route End ===============================//
+//======================== Glossarycontent Route Start ===============================//
+Route::get('/glossarycontent/list','GlossarycontentController@show');
+Route::get('/glossarycontent/create','GlossarycontentController@create');
+Route::get('/glossarycontent/edit/{id}','GlossarycontentController@edit');
+Route::get('/glossarycontent/delete/{id}','GlossarycontentController@destroy');
+Route::get('/glossarycontent','GlossarycontentController@index');
+Route::get('/glossarycontent/export/excel','GlossarycontentController@ExportExcel');
+Route::get('/glossarycontent/export/pdf','GlossarycontentController@ExportPDF');
+Route::post('/glossarycontent','GlossarycontentController@store');
+Route::post('/glossarycontent/ajax','GlossarycontentController@ajaxSave');
+Route::post('/glossarycontent/datatable/ajax','GlossarycontentController@datatable');
+Route::post('/glossarycontent/update/{id}','GlossarycontentController@update');
+//======================== Glossarycontent Route End ===============================//
+//======================== Glossarydata Route Start ===============================//
+Route::get('/glossarydata/list','GlossarydataController@show');
+Route::get('/glossarydata/create','GlossarydataController@create');
+Route::get('/glossarydata/edit/{id}','GlossarydataController@edit');
+Route::get('/glossarydata/delete/{id}','GlossarydataController@destroy');
+Route::get('/glossarydata','GlossarydataController@index');
+Route::get('/glossarydata/export/excel','GlossarydataController@ExportExcel');
+Route::get('/glossarydata/export/pdf','GlossarydataController@ExportPDF');
+Route::post('/glossarydata','GlossarydataController@store');
+Route::post('/glossarydata/ajax','GlossarydataController@ajaxSave');
+Route::post('/glossarydata/datatable/ajax','GlossarydataController@datatable');
+Route::post('/glossarydata/update/{id}','GlossarydataController@update');
+//======================== Glossarydata Route End ===============================//
+//======================== Typesoffundingcontent Route Start ===============================//
+Route::get('/typesoffundingcontent/list','TypesoffundingcontentController@show');
+Route::get('/typesoffundingcontent/create','TypesoffundingcontentController@create');
+Route::get('/typesoffundingcontent/edit/{id}','TypesoffundingcontentController@edit');
+Route::get('/typesoffundingcontent/delete/{id}','TypesoffundingcontentController@destroy');
+Route::get('/typesoffundingcontent','TypesoffundingcontentController@index');
+Route::get('/typesoffundingcontent/export/excel','TypesoffundingcontentController@ExportExcel');
+Route::get('/typesoffundingcontent/export/pdf','TypesoffundingcontentController@ExportPDF');
+Route::post('/typesoffundingcontent','TypesoffundingcontentController@store');
+Route::post('/typesoffundingcontent/ajax','TypesoffundingcontentController@ajaxSave');
+Route::post('/typesoffundingcontent/datatable/ajax','TypesoffundingcontentController@datatable');
+Route::post('/typesoffundingcontent/update/{id}','TypesoffundingcontentController@update');
+//======================== Typesoffundingcontent Route End ===============================//
+
+//======================== Presettlementfunding Route Start ===============================//
+Route::get('/presettlementfunding/list','PresettlementfundingController@show');
+Route::get('/presettlementfunding/create','PresettlementfundingController@create');
+Route::get('/presettlementfunding/edit/{id}','PresettlementfundingController@edit');
+Route::get('/presettlementfunding/delete/{id}','PresettlementfundingController@destroy');
+Route::get('/presettlementfunding','PresettlementfundingController@index');
+Route::get('/presettlementfunding/export/excel','PresettlementfundingController@ExportExcel');
+Route::get('/presettlementfunding/export/pdf','PresettlementfundingController@ExportPDF');
+Route::post('/presettlementfunding','PresettlementfundingController@store');
+Route::post('/presettlementfunding/ajax','PresettlementfundingController@ajaxSave');
+Route::post('/presettlementfunding/datatable/ajax','PresettlementfundingController@datatable');
+Route::post('/presettlementfunding/update/{id}','PresettlementfundingController@update');
+//======================== Presettlementfunding Route End ===============================//
+//======================== Casetype Route Start ===============================//
+Route::get('/casetype/list','CasetypeController@show');
+Route::get('/casetype/create','CasetypeController@create');
+Route::get('/casetype/edit/{id}','CasetypeController@edit');
+Route::get('/casetype/delete/{id}','CasetypeController@destroy');
+Route::get('/casetype','CasetypeController@index');
+Route::get('/casetype/export/excel','CasetypeController@ExportExcel');
+Route::get('/casetype/export/pdf','CasetypeController@ExportPDF');
+Route::post('/casetype','CasetypeController@store');
+Route::post('/casetype/ajax','CasetypeController@ajaxSave');
+Route::post('/casetype/datatable/ajax','CasetypeController@datatable');
+Route::post('/casetype/update/{id}','CasetypeController@update');
+//======================== Casetype Route End ===============================//
+//======================== Hearaboutus Route Start ===============================//
+Route::get('/hearaboutus/list','HearaboutusController@show');
+Route::get('/hearaboutus/create','HearaboutusController@create');
+Route::get('/hearaboutus/edit/{id}','HearaboutusController@edit');
+Route::get('/hearaboutus/delete/{id}','HearaboutusController@destroy');
+Route::get('/hearaboutus','HearaboutusController@index');
+Route::get('/hearaboutus/export/excel','HearaboutusController@ExportExcel');
+Route::get('/hearaboutus/export/pdf','HearaboutusController@ExportPDF');
+Route::post('/hearaboutus','HearaboutusController@store');
+Route::post('/hearaboutus/ajax','HearaboutusController@ajaxSave');
+Route::post('/hearaboutus/datatable/ajax','HearaboutusController@datatable');
+Route::post('/hearaboutus/update/{id}','HearaboutusController@update');
+//======================== Hearaboutus Route End ===============================//

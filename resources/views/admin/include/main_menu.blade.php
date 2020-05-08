@@ -31,8 +31,8 @@
               <p>Dashboard</p>
             </a>
           </li>
-          <li class="nav-item has-treeview {{ in_array(Request::path(),array('slideranimatedtext','slidercontent','howwehelp','betterdaysstarttoday','fundingyouneedcontent','fundingyouneeddata','youarenotalonecontent','youarenotalonevideos','helpcasetypes','helpcasetypesdata'))?'menu-open':'' }}">
-            <a href="#" class="nav-link {{ in_array(Request::path(),array('slideranimatedtext','slidercontent','howwehelp','betterdaysstarttoday','fundingyouneedcontent','fundingyouneeddata','youarenotalonecontent','youarenotalonevideos','helpcasetypes','helpcasetypesdata'))?'active':'' }}">
+          <li class="nav-item has-treeview {{ in_array(Request::path(),array('slideranimatedtext','slidercontent','howwehelp','betterdaysstarttoday','fundingyouneedcontent','fundingyouneeddata','youarenotalonecontent','youarenotalonevideos','helpcasetypes','helpcasetypesdata','glossarycontent','glossarydata'))?'menu-open':'' }}">
+            <a href="#" class="nav-link {{ in_array(Request::path(),array('slideranimatedtext','slidercontent','howwehelp','betterdaysstarttoday','fundingyouneedcontent','fundingyouneeddata','youarenotalonecontent','youarenotalonevideos','helpcasetypes','helpcasetypesdata','glossarycontent','glossarydata'))?'active':'' }}">
               <i class="nav-icon fas fa-home"></i>
               <p>
                 Home Page
@@ -100,27 +100,39 @@
                   <p>Help Case Types Data</p>
                 </a>
               </li>
+              <li class="nav-item">
+                <a href="{{url('glossarycontent')}}" class="nav-link {{ Request::path() == 'glossarycontent' ? 'active' : '' }}">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Glossary Content</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{url('glossarydata')}}" class="nav-link {{ Request::path() == 'glossarydata' ? 'active' : '' }}">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Glossary Data</p>
+                </a>
+              </li>
             </ul>
           </li>
-          <li class="nav-item has-treeview {{ in_array(Request::path(),array('package','package/create'))?'menu-open':'' }}">
-            <a href="#" class="nav-link {{ in_array(Request::path(),array('package','package/create'))?'active':'' }}">
+          <li class="nav-item has-treeview {{ in_array(Request::path(),array('typesoffundingcontent','presettlementfunding'))?'menu-open':'' }}">
+            <a href="#" class="nav-link {{ in_array(Request::path(),array('typesoffundingcontent','presettlementfunding'))?'active':'' }}">
               <i class="nav-icon fas fa-book-open"></i>
               <p>
-                Subscription Pricing
+                Types Of Funding
                 <i class="right fas fa-angle-left"></i>
               </p>
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="{{url('package/create')}}" class="nav-link {{ Request::path() == 'package/create' ? 'active' : '' }}">
+                <a href="{{url('typesoffundingcontent')}}" class="nav-link {{ Request::path() == 'typesoffundingcontent' ? 'active' : '' }}">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Create New Package</p>
+                  <p>Types Of Funding Content</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="{{url('package')}}" class="nav-link {{ Request::path() == 'package' ? 'active' : '' }}">
+                <a href="{{url('presettlementfunding')}}" class="nav-link {{ Request::path() == 'presettlementfunding' ? 'active' : '' }}">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Package List</p>
+                  <p>Pre-Settlement Funding</p>
                 </a>
               </li>
             </ul>
