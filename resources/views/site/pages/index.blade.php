@@ -24,5 +24,8 @@
 @endsection
 
 @section('js')
+	<script type="text/javascript">
+		var dataText = ["Bills", "Rent", "Life"];
+	</script>
     <script type='text/javascript' src='{{asset('mod/js/typeanimation.js?ver=5.3.2')}}'></script>
 @endsection
