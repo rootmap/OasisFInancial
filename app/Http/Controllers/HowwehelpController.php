@@ -85,6 +85,7 @@ class HowWeHelpController extends Controller
                 'item_three_detail'=>'required',
                 'item_four_icon'=>'required',
                 'item_four_detail'=>'required',
+                'module_background'=>'required',
                 'module_status'=>'required',
         ]);
 
@@ -131,6 +132,16 @@ class HowWeHelpController extends Controller
         }
 
                 
+
+        $filename_howwehelp_10='';
+        if ($request->hasFile('module_background')) {
+            $img_howwehelp = $request->file('module_background');
+            $upload_howwehelp = 'upload/howwehelp';
+            $filename_howwehelp_10 = env('APP_NAME').'_'.time() . '.' . $img_howwehelp->getClientOriginalExtension();
+            $img_howwehelp->move($upload_howwehelp, $filename_howwehelp_10);
+        }
+
+                
         $tab=new HowWeHelp();
         
         $tab->block_heading=$request->block_heading;
@@ -143,6 +154,7 @@ class HowWeHelpController extends Controller
         $tab->item_three_detail=$request->item_three_detail;
         $tab->item_four_icon=$filename_howwehelp_8;
         $tab->item_four_detail=$request->item_four_detail;
+        $tab->module_background=$filename_howwehelp_10;
         $tab->module_status=$request->module_status;
         $tab->save();
 
@@ -164,6 +176,7 @@ class HowWeHelpController extends Controller
                 'item_three_detail'=>'required',
                 'item_four_icon'=>'required',
                 'item_four_detail'=>'required',
+                'module_background'=>'required',
                 'module_status'=>'required',
         ]);
 
@@ -179,6 +192,7 @@ class HowWeHelpController extends Controller
         $tab->item_three_detail=$request->item_three_detail;
         $tab->item_four_icon=$filename_howwehelp_8;
         $tab->item_four_detail=$request->item_four_detail;
+        $tab->module_background=$filename_howwehelp_10;
         $tab->module_status=$request->module_status;
         $tab->save();
 
@@ -209,6 +223,7 @@ class HowWeHelpController extends Controller
                             $query->orWhere('item_three_detail','LIKE','%'.$search.'%');
                             $query->orWhere('item_four_icon','LIKE','%'.$search.'%');
                             $query->orWhere('item_four_detail','LIKE','%'.$search.'%');
+                            $query->orWhere('module_background','LIKE','%'.$search.'%');
                             $query->orWhere('module_status','LIKE','%'.$search.'%');
                             $query->orWhere('created_at','LIKE','%'.$search.'%');
 
@@ -235,6 +250,7 @@ class HowWeHelpController extends Controller
                             $query->orWhere('item_three_detail','LIKE','%'.$search.'%');
                             $query->orWhere('item_four_icon','LIKE','%'.$search.'%');
                             $query->orWhere('item_four_detail','LIKE','%'.$search.'%');
+                            $query->orWhere('module_background','LIKE','%'.$search.'%');
                             $query->orWhere('module_status','LIKE','%'.$search.'%');
                             $query->orWhere('created_at','LIKE','%'.$search.'%');
 
@@ -282,12 +298,12 @@ class HowWeHelpController extends Controller
          $dataDateTimeIns=formatDateTime(date('d-M-Y H:i:s a'));
         $data=array();
         $array_column=array(
-                                'ID','Block Heading','Block Detail','Item One Icon','Item One Detail','Item Two Icon','Item Two Detail','Item Three Icon','Item Three Detail','Item Four Icon','Item Four Detail','Module Status','Created Date');
+                                'ID','Block Heading','Block Detail','Item One Icon','Item One Detail','Item Two Icon','Item Two Detail','Item Three Icon','Item Three Detail','Item Four Icon','Item Four Detail','Module Background','Module Status','Created Date');
         array_push($data, $array_column);
         $inv=$this->HowWeHelpQuery($request);
         foreach($inv as $voi):
             $inv_arry=array(
-                                $voi->id,$voi->block_heading,$voi->block_detail,$voi->item_one_icon,$voi->item_one_detail,$voi->item_two_icon,$voi->item_two_detail,$voi->item_three_icon,$voi->item_three_detail,$voi->item_four_icon,$voi->item_four_detail,$voi->module_status,formatDate($voi->created_at));
+                                $voi->id,$voi->block_heading,$voi->block_detail,$voi->item_one_icon,$voi->item_one_detail,$voi->item_two_icon,$voi->item_two_detail,$voi->item_three_icon,$voi->item_three_detail,$voi->item_four_icon,$voi->item_four_detail,$voi->module_background,$voi->module_status,formatDate($voi->created_at));
             array_push($data, $inv_arry);
         endforeach;
 
@@ -329,6 +345,8 @@ class HowWeHelpController extends Controller
                         
                             <th class='text-center' style='font-size:12px;' >Item Four Detail</th>
                         
+                            <th class='text-center' style='font-size:12px;' >Module Background</th>
+                        
                             <th class='text-center' style='font-size:12px;' >Module Status</th>
                         
                 <th class='text-center' style='font-size:12px;'>Created Date</th>
@@ -350,6 +368,7 @@ class HowWeHelpController extends Controller
                         <td style='font-size:12px;' class='text-center'>".$voi->item_three_detail."</td>
                         <td style='font-size:12px;' class='text-center'>".$voi->item_four_icon."</td>
                         <td style='font-size:12px;' class='text-center'>".$voi->item_four_detail."</td>
+                        <td style='font-size:12px;' class='text-center'>".$voi->module_background."</td>
                         <td style='font-size:12px;' class='text-center'>".$voi->module_status."</td>
                         <td style='font-size:12px; text-align:center;' class='text-center'>".formatDate($voi->created_at)."</td>
                         </tr>";
@@ -449,6 +468,16 @@ class HowWeHelpController extends Controller
         }
 
                 
+
+        $filename_howwehelp_10=$request->ex_module_background;
+        if ($request->hasFile('module_background')) {
+            $img_howwehelp = $request->file('module_background');
+            $upload_howwehelp = 'upload/howwehelp';
+            $filename_howwehelp_10 = env('APP_NAME').'_'.time() . '.' . $img_howwehelp->getClientOriginalExtension();
+            $img_howwehelp->move($upload_howwehelp, $filename_howwehelp_10);
+        }
+
+                
         $tab=HowWeHelp::find($id);
         
         $tab->block_heading=$request->block_heading;
@@ -461,6 +490,7 @@ class HowWeHelpController extends Controller
         $tab->item_three_detail=$request->item_three_detail;
         $tab->item_four_icon=$filename_howwehelp_8;
         $tab->item_four_detail=$request->item_four_detail;
+        $tab->module_background=$filename_howwehelp_10;
         $tab->module_status=$request->module_status;
         $tab->save();
 

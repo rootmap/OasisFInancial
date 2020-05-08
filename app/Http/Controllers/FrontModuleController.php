@@ -62,6 +62,11 @@ class FrontModuleController extends Controller
         return view('site.pages.for-brokers');
     }
 
+    public function completeapplication()
+    {
+        return view('site.pages.complete-application');
+    }
+
     /**
      * Show the form for creating a new resource.
      *

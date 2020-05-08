@@ -54,7 +54,7 @@
                       <!-- text input -->
                       <div class="form-group">
                         <label for="block_detail">Block Detail</label>
-                        <textarea class="form-control" rows="3"  placeholder="Enter Detail" id="block_detail" name="block_detail"></textarea>
+                        <textarea class="form-control textareadescription" rows="3"  placeholder="Enter Block Detail" id="block_detail" name="block_detail"></textarea>
                       </div>
                     </div>
                 </div>
@@ -77,7 +77,7 @@
                       <!-- text input -->
                       <div class="form-group">
                         <label for="item_one_detail">Item One Detail</label>
-                        <input type="text" class="form-control" placeholder="Enter Item One Detail" id="item_one_detail" name="item_one_detail">
+                        <textarea class="form-control textarea" rows="3"  placeholder="Enter Item One Detail" id="item_one_detail" name="item_one_detail"></textarea>
                       </div>
                     </div>
                 </div>
@@ -100,7 +100,7 @@
                       <!-- text input -->
                       <div class="form-group">
                         <label for="item_two_detail">Item Two Detail</label>
-                        <input type="text" class="form-control" placeholder="Enter Item Two Detail" id="item_two_detail" name="item_two_detail">
+                        <textarea class="form-control textarea" rows="3"  placeholder="Enter Item Two Detail" id="item_two_detail" name="item_two_detail"></textarea>
                       </div>
                     </div>
                 </div>
@@ -123,7 +123,7 @@
                       <!-- text input -->
                       <div class="form-group">
                         <label for="item_three_detail">Item Three Detail</label>
-                        <input type="text" class="form-control" placeholder="Enter Item Three Detail" id="item_three_detail" name="item_three_detail">
+                        <textarea class="form-control textarea" rows="3"  placeholder="Enter Item Three Detail" id="item_three_detail" name="item_three_detail"></textarea>
                       </div>
                     </div>
                 </div>
@@ -146,11 +146,24 @@
                       <!-- text input -->
                       <div class="form-group">
                         <label for="item_four_detail">Item Four Detail</label>
-                        <input type="text" class="form-control" placeholder="Enter Item Four Detail" id="item_four_detail" name="item_four_detail">
+                        <textarea class="form-control textarea" rows="3"  placeholder="Enter Item Four Detail" id="item_four_detail" name="item_four_detail"></textarea>
                       </div>
                     </div>
                 </div>
                 
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label>Choose Module Background</label>
+                                    <!-- <label for="customFile">Choose Module Background</label> -->
+
+                                    <div class="custom-file">
+                                      <input type="file" class="custom-file-input"  id="module_background" name="module_background">
+                                      <label class="custom-file-label" for="customFile">Choose Module Background</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
         <div class="row">
             <div class="col-sm-12">
               <!-- radio -->
@@ -191,10 +204,8 @@
   </div><!-- /.container-fluid -->
 </section>
 @endsection
-@section("css")
-  <link rel="stylesheet" href="{{url('admin/plugins/summernote/summernote-bs4.css')}}">
-  <!-- Google Font: Source Sans Pro -->
-  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+@section('css')
+    <link rel="stylesheet" href="{{url('admin/plugins/summernote/summernote-bs4.css')}}">
 @endsection
 @section("js")
 
@@ -209,8 +220,25 @@
     <script>
       $(function () {
         // Summernote
-        $('.textarea').summernote({height: 450})
-      })
+        $('.textarea').summernote({
+          height: 50,
+          toolbar: [
+                    ['font', ['bold', 'italic', 'underline', 'clear']],
+                    ['view', ['fullscreen', 'codeview']],
+                  ],
+        });
+
+        $('.textareadescription').summernote({
+          height: 100,
+          toolbar: [
+                    
+                    ['font', ['bold', 'italic', 'underline', 'clear']],
+                    ['para', ['ul', 'ol', 'paragraph']],
+                    ['table', ['table']],
+                    ['view', ['fullscreen', 'codeview']],
+                  ],
+        });
+      });
     </script>
 
 @endsection

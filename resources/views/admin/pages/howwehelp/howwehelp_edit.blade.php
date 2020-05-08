@@ -64,7 +64,7 @@
                       <!-- text input -->
                       <div class="form-group">
                         <label for="block_detail">Block Detail</label>
-                        <textarea class="form-control textareadescription" rows="3"  placeholder="Enter Detail" id="block_detail" name="block_detail"><?php 
+                        <textarea class="form-control textareadescription" rows="3"  placeholder="Enter Block Detail" id="block_detail" name="block_detail"><?php 
                                 if(isset($dataRow->block_detail)){
                                     
                                     echo $dataRow->block_detail;
@@ -100,12 +100,13 @@
                       <!-- text input -->
                       <div class="form-group">
                         <label for="item_one_detail">Item One Detail</label>
-                        <textarea class="form-control textarea" placeholder="Enter Item One Detail" id="item_one_detail" 
-                        name="item_one_detail"><?php 
-                        if(isset($dataRow->item_one_detail)){
-                            ?>{{$dataRow->item_one_detail}}<?php 
-                        }
-                        ?></textarea>
+                        <textarea class="form-control textarea" rows="3"  placeholder="Enter Item One Detail" id="item_one_detail" name="item_one_detail"><?php 
+                                if(isset($dataRow->item_one_detail)){
+                                    
+                                    echo $dataRow->item_one_detail;
+                                    
+                                }
+                                ?></textarea>
                       </div>
                     </div>
                 </div>
@@ -135,12 +136,13 @@
                       <!-- text input -->
                       <div class="form-group">
                         <label for="item_two_detail">Item Two Detail</label>
-                        <textarea class="form-control textarea" class="form-control" placeholder="Enter Item Two Detail" id="item_two_detail" 
-                        name="item_two_detail"><?php 
-                        if(isset($dataRow->item_two_detail)){
-                            ?>{{$dataRow->item_two_detail}}<?php 
-                        }
-                        ?></textarea>
+                        <textarea class="form-control textarea" rows="3"  placeholder="Enter Item Two Detail" id="item_two_detail" name="item_two_detail"><?php 
+                                if(isset($dataRow->item_two_detail)){
+                                    
+                                    echo $dataRow->item_two_detail;
+                                    
+                                }
+                                ?></textarea>
                       </div>
                     </div>
                 </div>
@@ -170,12 +172,13 @@
                       <!-- text input -->
                       <div class="form-group">
                         <label for="item_three_detail">Item Three Detail</label>
-                        <textarea class="form-control textarea" class="form-control" placeholder="Enter Item Three Detail" id="item_three_detail" 
-                        name="item_three_detail"><?php 
-                        if(isset($dataRow->item_three_detail)){
-                            ?>{{$dataRow->item_three_detail}}<?php 
-                        }
-                        ?></textarea>
+                        <textarea class="form-control textarea" rows="3"  placeholder="Enter Item Three Detail" id="item_three_detail" name="item_three_detail"><?php 
+                                if(isset($dataRow->item_three_detail)){
+                                    
+                                    echo $dataRow->item_three_detail;
+                                    
+                                }
+                                ?></textarea>
                       </div>
                     </div>
                 </div>
@@ -205,16 +208,37 @@
                       <!-- text input -->
                       <div class="form-group">
                         <label for="item_four_detail">Item Four Detail</label>
-                        <textarea class="form-control textarea" class="form-control" placeholder="Enter Item Four Detail" id="item_four_detail" 
-                        name="item_four_detail"><?php 
-                        if(isset($dataRow->item_four_detail)){
-                            ?>{{$dataRow->item_four_detail}}<?php 
-                        }
-                        ?></textarea>
+                        <textarea class="form-control textarea" rows="3"  placeholder="Enter Item Four Detail" id="item_four_detail" name="item_four_detail"><?php 
+                                if(isset($dataRow->item_four_detail)){
+                                    
+                                    echo $dataRow->item_four_detail;
+                                    
+                                }
+                                ?></textarea>
                       </div>
                     </div>
                 </div>
                 
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Choose Module Background</label>
+                                    <!-- <label for="customFile">Choose Module Background</label> -->
+                                    <div class="custom-file">
+                                      <input type="file" class="custom-file-input"  id="module_background" name="module_background">
+                                      <input type="hidden" value="{{$dataRow->module_background}}" name="ex_module_background" />
+                                      <label class="custom-file-label" for="customFile">Choose Module Background</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                @if(isset($dataRow->module_background))
+                                    @if(!empty($dataRow->module_background))
+                                        <img class="img-thumbnail" src="{{url('upload/howwehelp/'.$dataRow->module_background)}}" width="150">
+                                    @endif
+                                @endif
+                            </div>
+                        </div>
         <div class="row">
             <div class="col-sm-12">
               <!-- radio -->
@@ -275,10 +299,8 @@
   </div><!-- /.container-fluid -->
 </section>
 @endsection
-@section("css")
-  <link rel="stylesheet" href="{{url('admin/plugins/summernote/summernote-bs4.css')}}">
-  <!-- Google Font: Source Sans Pro -->
-  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+@section('css')
+    <link rel="stylesheet" href="{{url('admin/plugins/summernote/summernote-bs4.css')}}">
 @endsection
 @section("js")
 
@@ -315,5 +337,4 @@
     </script>
 
 @endsection
-        
         

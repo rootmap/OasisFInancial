@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<svg width="45px" height="50px" viewBox="0 0 45 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<g id="Mockup" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+		<g id="Desktop-//-Homepage-" transform="translate(-134.000000, -1449.000000)" stroke-width="2">
+			<g id="How-We-Can-Help" transform="translate(-4.000000, 1029.000000)">
+				<g id="Group" transform="translate(134.000000, 237.000000)">
+					<g id="No-Risk" transform="translate(5.000000, 184.000000)">
+						<g id="Icon" transform="translate(0.000000, 1.000000)">
+							<path d="M42.0438957,8 C31.5658684,8 21.0438957,0 21.0438957,0 C21.0438957,0 10.521923,8 0.0438957476,8 C0.0438957476,8 -1.95610425,34.4694824 21.0438957,46 C44.0438957,34.4694824 42.0438957,8 42.0438957,8 Z" id="Path" stroke="#133D8D"></path>
+							<path d="M20.984375,41.6142578 C6.8505859,33.4638672 4.375,18.5249023 4,11.8417969 C11.1201172,10.7646485 17.609375,7.1586914 20.9833984,5 C24.3613281,7.1611328 30.8603515,10.7724609 37.9892578,11.8447266 C37.6542969,18.534668 35.2402344,33.4116211 20.984375,41.6142578 Z" id="Path" stroke="#133D8D"></path>
+							<ellipse id="Oval" stroke="#3DB200" cx="21" cy="18" rx="5" ry="7"></ellipse>
+							<path d="M14,28.5 L28.0000019,28.5" id="Path" stroke="#3DB200"></path>
+							<path d="M17,33.5 L25,33.5" id="Path" stroke="#3DB200"></path>
+						</g>
+					</g>
+				</g>
+			</g>
+		</g>
+	</g>
+</svg>

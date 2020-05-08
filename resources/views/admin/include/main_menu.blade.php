@@ -31,8 +31,8 @@
               <p>Dashboard</p>
             </a>
           </li>
-          <li class="nav-item has-treeview {{ in_array(Request::path(),array('slideranimatedtext','slidercontent','howwehelp','intragtedsolutions','homevideos','joinsimplicity'))?'menu-open':'' }}">
-            <a href="#" class="nav-link {{ in_array(Request::path(),array('slideranimatedtext','slidercontent','howwehelp','intragtedsolutions','homevideos','joinsimplicity'))?'active':'' }}">
+          <li class="nav-item has-treeview {{ in_array(Request::path(),array('slideranimatedtext','slidercontent','howwehelp','betterdaysstarttoday','fundingyouneedcontent','fundingyouneeddata','youarenotalonecontent','youarenotalonevideos','helpcasetypes','helpcasetypesdata'))?'menu-open':'' }}">
+            <a href="#" class="nav-link {{ in_array(Request::path(),array('slideranimatedtext','slidercontent','howwehelp','betterdaysstarttoday','fundingyouneedcontent','fundingyouneeddata','youarenotalonecontent','youarenotalonevideos','helpcasetypes','helpcasetypesdata'))?'active':'' }}">
               <i class="nav-icon fas fa-home"></i>
               <p>
                 Home Page
@@ -59,21 +59,45 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="{{url('homevideos')}}" class="nav-link {{ Request::path() == 'homevideos' ? 'active' : '' }}">
+                <a href="{{url('betterdaysstarttoday')}}" class="nav-link {{ Request::path() == 'betterdaysstarttoday' ? 'active' : '' }}">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Video</p>
+                  <p>Better Days Start Today</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="{{url('youtubevideogallery')}}" class="nav-link {{ Request::path() == 'homevideos' ? 'active' : '' }}">
+                <a href="{{url('fundingyouneedcontent')}}" class="nav-link {{ Request::path() == 'fundingyouneedcontent' ? 'active' : '' }}">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Video Gallery</p>
+                  <p>Funding You Need Content</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="{{url('joinsimplicity')}}" class="nav-link {{ Request::path() == 'joinsimplicity' ? 'active' : '' }}">
+                <a href="{{url('fundingyouneeddata')}}" class="nav-link {{ Request::path() == 'fundingyouneeddata' ? 'active' : '' }}">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Join Simplicity</p>
+                  <p>Funding You Need Data</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{url('youarenotalonecontent')}}" class="nav-link {{ Request::path() == 'youarenotalonecontent' ? 'active' : '' }}">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>You Are Not Alone Content</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{url('youarenotalonevideos')}}" class="nav-link {{ Request::path() == 'youarenotalonevideos' ? 'active' : '' }}">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>You Are Not Alone Videos</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{url('helpcasetypes')}}" class="nav-link {{ Request::path() == 'helpcasetypes' ? 'active' : '' }}">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Help Case Types</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{url('helpcasetypesdata')}}" class="nav-link {{ Request::path() == 'helpcasetypesdata' ? 'active' : '' }}">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Help Case Types Data</p>
                 </a>
               </li>
             </ul>
