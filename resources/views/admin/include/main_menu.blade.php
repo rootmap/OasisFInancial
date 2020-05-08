@@ -31,8 +31,8 @@
               <p>Dashboard</p>
             </a>
           </li>
-          <li class="nav-item has-treeview {{ in_array(Request::path(),array('slider','youtubevideogallery','features','intragtedsolutions','homevideos','joinsimplicity'))?'menu-open':'' }}">
-            <a href="#" class="nav-link {{ in_array(Request::path(),array('slider','youtubevideogallery','features','intragtedsolutions','homevideos','joinsimplicity'))?'active':'' }}">
+          <li class="nav-item has-treeview {{ in_array(Request::path(),array('slideranimatedtext','slidercontent','howwehelp','intragtedsolutions','homevideos','joinsimplicity'))?'menu-open':'' }}">
+            <a href="#" class="nav-link {{ in_array(Request::path(),array('slideranimatedtext','slidercontent','howwehelp','intragtedsolutions','homevideos','joinsimplicity'))?'active':'' }}">
               <i class="nav-icon fas fa-home"></i>
               <p>
                 Home Page
@@ -41,21 +41,21 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="{{url('slider')}}" class="nav-link {{ Request::path() == 'slider' ? 'active' : '' }}">
+                <a href="{{url('slideranimatedtext')}}" class="nav-link {{ Request::path() == 'slideranimatedtext' ? 'active' : '' }}">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Slider</p>
+                  <p>Slider Animation Text</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="{{url('features')}}" class="nav-link {{ Request::path() == 'features' ? 'active' : '' }}">
+                <a href="{{url('slidercontent')}}" class="nav-link {{ Request::path() == 'slidercontent' ? 'active' : '' }}">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Features</p>
+                  <p>Slider Content</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="{{url('intragtedsolutions')}}" class="nav-link {{ Request::path() == 'intragtedsolutions' ? 'active' : '' }}">
+                <a href="{{url('howwehelp')}}" class="nav-link {{ Request::path() == 'howwehelp' ? 'active' : '' }}">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Intregated Solution</p>
+                  <p>How We Help</p>
                 </a>
               </li>
               <li class="nav-item">
@@ -282,8 +282,8 @@
               <p>Contact</p>
             </a>
           </li>
-          <li class="nav-item has-treeview {{ in_array(Request::path(),array('sitesetting','pagesetting','cardpointestoresetting','websitesettings/create'))?'menu-open':'' }}">
-            <a href="#" class="nav-link {{ in_array(Request::path(),array('sitesetting','pagesetting','cardpointestoresetting','websitesettings/create'))?'active':'' }}">
+          <li class="nav-item has-treeview {{ in_array(Request::path(),array('sitesettings','pagesetting','cardpointestoresetting','websitesettings/create'))?'menu-open':'' }}">
+            <a href="#" class="nav-link {{ in_array(Request::path(),array('sitesettings','pagesetting','cardpointestoresetting','websitesettings/create'))?'active':'' }}">
               <i class="nav-icon fas fa-cogs"></i>
               <p>
                 Setting
@@ -292,7 +292,7 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="{{url('sitesetting')}}" class="nav-link {{ Request::path() == 'sitesetting' ? 'active' : '' }}">
+                <a href="{{url('sitesettings')}}" class="nav-link {{ Request::path() == 'sitesettings' ? 'active' : '' }}">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Site Setting</p>
                 </a>
