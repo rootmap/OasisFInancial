@@ -114,8 +114,8 @@
               </li>
             </ul>
           </li>
-          <li class="nav-item has-treeview {{ in_array(Request::path(),array('typesoffundingcontent','presettlementfunding'))?'menu-open':'' }}">
-            <a href="#" class="nav-link {{ in_array(Request::path(),array('typesoffundingcontent','presettlementfunding'))?'active':'' }}">
+          <li class="nav-item has-treeview {{ in_array(Request::path(),array('typesoffundingcontent','presettlementfunding','presettlementfundingtypes','caseswefundcontent'))?'menu-open':'' }}">
+            <a href="#" class="nav-link {{ in_array(Request::path(),array('typesoffundingcontent','presettlementfunding','presettlementfundingtypes','caseswefundcontent'))?'active':'' }}">
               <i class="nav-icon fas fa-book-open"></i>
               <p>
                 Types Of Funding
@@ -135,21 +135,33 @@
                   <p>Pre-Settlement Funding</p>
                 </a>
               </li>
+              <li class="nav-item">
+                <a href="{{url('presettlementfundingtypes')}}" class="nav-link {{ Request::path() == 'presettlementfundingtypes' ? 'active' : '' }}">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Pre-Settlement Funding Types</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{url('caseswefundcontent')}}" class="nav-link {{ Request::path() == 'caseswefundcontent' ? 'active' : '' }}">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Cases We Fund : Content</p>
+                </a>
+              </li>
             </ul>
           </li>
-          <li class="nav-item has-treeview {{ in_array(Request::path(),array('package','package/create'))?'menu-open':'' }}">
-            <a href="#" class="nav-link {{ in_array(Request::path(),array('package','package/create'))?'active':'' }}">
+          <li class="nav-item has-treeview {{ in_array(Request::path(),array('howitworks','package/create'))?'menu-open':'' }}">
+            <a href="#" class="nav-link {{ in_array(Request::path(),array('howitworks','package/create'))?'active':'' }}">
               <i class="nav-icon fas fa-book-open"></i>
               <p>
-                Hardware
+                How It Works
                 <i class="right fas fa-angle-left"></i>
               </p>
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="{{url('hardwarepackage/create')}}" class="nav-link {{ Request::path() == 'package/create' ? 'active' : '' }}">
+                <a href="{{url('howitworks')}}" class="nav-link {{ Request::path() == 'howitworks' ? 'active' : '' }}">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Add New Hardware</p>
+                  <p>Page Detail</p>
                 </a>
               </li>
               <li class="nav-item">

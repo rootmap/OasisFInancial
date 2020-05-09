@@ -34,6 +34,9 @@ Route::get('/contact-us', 'FrontModuleController@contactus');
 Route::get('/careers', 'FrontModuleController@careers');
 Route::get('/for-brokers', 'FrontModuleController@forbrokers');
 Route::get('/complete-application', 'FrontModuleController@completeapplication');
+Route::get('/structured-settlement-application-form', 'FrontModuleController@structuredsettlementapplicationform');
+Route::get('/inheritance-funding', 'FrontModuleController@inheritancefunding');
+Route::get('/need-an-attorney', 'FrontModuleController@needanattorney');
 Route::get('/crud', 'CrudController@crud')->name('crud');
 Route::post('/crud', 'CrudController@crudgenarate')->name('crudgenarate');
 
@@ -276,3 +279,96 @@ Route::post('/hearaboutus/ajax','HearaboutusController@ajaxSave');
 Route::post('/hearaboutus/datatable/ajax','HearaboutusController@datatable');
 Route::post('/hearaboutus/update/{id}','HearaboutusController@update');
 //======================== Hearaboutus Route End ===============================//
+//======================== Presettlementfundingtypes Route Start ===============================//
+Route::get('/presettlementfundingtypes/list','PresettlementfundingtypesController@show');
+Route::get('/presettlementfundingtypes/create','PresettlementfundingtypesController@create');
+Route::get('/presettlementfundingtypes/edit/{id}','PresettlementfundingtypesController@edit');
+Route::get('/presettlementfundingtypes/delete/{id}','PresettlementfundingtypesController@destroy');
+Route::get('/presettlementfundingtypes','PresettlementfundingtypesController@index');
+Route::get('/presettlementfundingtypes/export/excel','PresettlementfundingtypesController@ExportExcel');
+Route::get('/presettlementfundingtypes/export/pdf','PresettlementfundingtypesController@ExportPDF');
+Route::post('/presettlementfundingtypes','PresettlementfundingtypesController@store');
+Route::post('/presettlementfundingtypes/ajax','PresettlementfundingtypesController@ajaxSave');
+Route::post('/presettlementfundingtypes/datatable/ajax','PresettlementfundingtypesController@datatable');
+Route::post('/presettlementfundingtypes/update/{id}','PresettlementfundingtypesController@update');
+//======================== Presettlementfundingtypes Route End ===============================//
+//======================== Applicationform Route Start ===============================//
+Route::get('/applicationform/list','ApplicationformController@show');
+Route::get('/applicationform/create','ApplicationformController@create');
+Route::get('/applicationform/edit/{id}','ApplicationformController@edit');
+Route::get('/applicationform/delete/{id}','ApplicationformController@destroy');
+Route::get('/applicationform','ApplicationformController@index');
+Route::get('/applicationform/export/excel','ApplicationformController@ExportExcel');
+Route::get('/applicationform/export/pdf','ApplicationformController@ExportPDF');
+Route::post('/applicationform','ApplicationformController@store');
+Route::post('/applicationform/ajax','ApplicationformController@ajaxSave');
+Route::post('/applicationform/datatable/ajax','ApplicationformController@datatable');
+Route::post('/applicationform/update/{id}','ApplicationformController@update');
+//======================== Applicationform Route End ===============================//
+
+//======================== Caseswefundcontent Route Start ===============================//
+Route::get('/caseswefundcontent/list','CaseswefundcontentController@show');
+Route::get('/caseswefundcontent/create','CaseswefundcontentController@create');
+Route::get('/caseswefundcontent/edit/{id}','CaseswefundcontentController@edit');
+Route::get('/caseswefundcontent/delete/{id}','CaseswefundcontentController@destroy');
+Route::get('/caseswefundcontent','CaseswefundcontentController@index');
+Route::get('/caseswefundcontent/export/excel','CaseswefundcontentController@ExportExcel');
+Route::get('/caseswefundcontent/export/pdf','CaseswefundcontentController@ExportPDF');
+Route::post('/caseswefundcontent','CaseswefundcontentController@store');
+Route::post('/caseswefundcontent/ajax','CaseswefundcontentController@ajaxSave');
+Route::post('/caseswefundcontent/datatable/ajax','CaseswefundcontentController@datatable');
+Route::post('/caseswefundcontent/update/{id}','CaseswefundcontentController@update');
+//======================== Caseswefundcontent Route End ===============================//
+//======================== Caseswefundtype Route Start ===============================//
+Route::get('/caseswefundtype/list','CaseswefundtypeController@show');
+Route::get('/caseswefundtype/create','CaseswefundtypeController@create');
+Route::get('/caseswefundtype/edit/{id}','CaseswefundtypeController@edit');
+Route::get('/caseswefundtype/delete/{id}','CaseswefundtypeController@destroy');
+Route::get('/caseswefundtype','CaseswefundtypeController@index');
+Route::get('/caseswefundtype/export/excel','CaseswefundtypeController@ExportExcel');
+Route::get('/caseswefundtype/export/pdf','CaseswefundtypeController@ExportPDF');
+Route::post('/caseswefundtype','CaseswefundtypeController@store');
+Route::post('/caseswefundtype/ajax','CaseswefundtypeController@ajaxSave');
+Route::post('/caseswefundtype/datatable/ajax','CaseswefundtypeController@datatable');
+Route::post('/caseswefundtype/update/{id}','CaseswefundtypeController@update');
+//======================== Caseswefundtype Route End ===============================//
+
+//======================== Howitworks Route Start ===============================//
+Route::get('/howitworks/list','HowitworksController@show');
+Route::get('/howitworks/create','HowitworksController@create');
+Route::get('/howitworks/edit/{id}','HowitworksController@edit');
+Route::get('/howitworks/delete/{id}','HowitworksController@destroy');
+Route::get('/howitworks','HowitworksController@index');
+Route::get('/howitworks/export/excel','HowitworksController@ExportExcel');
+Route::get('/howitworks/export/pdf','HowitworksController@ExportPDF');
+Route::post('/howitworks','HowitworksController@store');
+Route::post('/howitworks/ajax','HowitworksController@ajaxSave');
+Route::post('/howitworks/datatable/ajax','HowitworksController@datatable');
+Route::post('/howitworks/update/{id}','HowitworksController@update');
+//======================== Howitworks Route End ===============================//
+//======================== Dontsettleforlesssteps Route Start ===============================//
+Route::get('/dontsettleforlesssteps/list','DontsettleforlessstepsController@show');
+Route::get('/dontsettleforlesssteps/create','DontsettleforlessstepsController@create');
+Route::get('/dontsettleforlesssteps/edit/{id}','DontsettleforlessstepsController@edit');
+Route::get('/dontsettleforlesssteps/delete/{id}','DontsettleforlessstepsController@destroy');
+Route::get('/dontsettleforlesssteps','DontsettleforlessstepsController@index');
+Route::get('/dontsettleforlesssteps/export/excel','DontsettleforlessstepsController@ExportExcel');
+Route::get('/dontsettleforlesssteps/export/pdf','DontsettleforlessstepsController@ExportPDF');
+Route::post('/dontsettleforlesssteps','DontsettleforlessstepsController@store');
+Route::post('/dontsettleforlesssteps/ajax','DontsettleforlessstepsController@ajaxSave');
+Route::post('/dontsettleforlesssteps/datatable/ajax','DontsettleforlessstepsController@datatable');
+Route::post('/dontsettleforlesssteps/update/{id}','DontsettleforlessstepsController@update');
+//======================== Dontsettleforlesssteps Route End ===============================//
+//======================== Structuredsettlementapplicationform Route Start ===============================//
+Route::get('/structuredsettlementapplicationform/list','StructuredsettlementapplicationformController@show');
+Route::get('/structuredsettlementapplicationform/create','StructuredsettlementapplicationformController@create');
+Route::get('/structuredsettlementapplicationform/edit/{id}','StructuredsettlementapplicationformController@edit');
+Route::get('/structuredsettlementapplicationform/delete/{id}','StructuredsettlementapplicationformController@destroy');
+Route::get('/structuredsettlementapplicationform','StructuredsettlementapplicationformController@index');
+Route::get('/structuredsettlementapplicationform/export/excel','StructuredsettlementapplicationformController@ExportExcel');
+Route::get('/structuredsettlementapplicationform/export/pdf','StructuredsettlementapplicationformController@ExportPDF');
+Route::post('/structuredsettlementapplicationform','StructuredsettlementapplicationformController@store');
+Route::post('/structuredsettlementapplicationform/ajax','StructuredsettlementapplicationformController@ajaxSave');
+Route::post('/structuredsettlementapplicationform/datatable/ajax','StructuredsettlementapplicationformController@datatable');
+Route::post('/structuredsettlementapplicationform/update/{id}','StructuredsettlementapplicationformController@update');
+//======================== Structuredsettlementapplicationform Route End ===============================//

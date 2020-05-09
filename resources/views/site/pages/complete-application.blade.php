@@ -45,42 +45,37 @@
                                             <div class="row">
                                                 <div class="col-md-6 col-xs-12 col-sm-12 col-lg-6">
                                                     <div class="form-group">
-                                                        <label class="gfield_label" for="exampleFormControlInput1">First Name*<span class='gfield_required'>*</span></label>
-                                                        <input type="text" class="form-control" autocomplete="off" id="exampleFormControlInput1">
+                                                        <label class="gfield_label" for="exampleFormControlInput1">First Name<span class='gfield_required'>*</span></label>
+                                                        <input type="text" class="form-control" name="first_name" autocomplete="off" id="exampleFormControlInput1">
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6 col-xs-12 col-sm-12 col-lg-6">
                                                     <div class="form-group">
                                                         <label class="gfield_label" for="exampleFormControlInput1">Last Name<span class='gfield_required'>*</span></label>
-                                                        <input type="text" class="form-control" autocomplete="off" id="exampleFormControlInput1">
+                                                        <input type="text" class="form-control" name="last_name" autocomplete="off" id="exampleFormControlInput1">
                                                     </div>
                                                 </div>
-                                             {{--    <div class="col-md-4 col-xs-12 col-sm-12 col-lg-4">
-                                                    <div class="form-group">
-                                                        <label class="gfield_label" for="exampleFormControlInput1">Email<span class='gfield_required'>*</span></label>
-                                                        <input type="email" class="form-control" autocomplete="off" id="exampleFormControlInput1">
-                                                    </div>
-                                                </div> --}}
+
                                             </div>
 
                                             <div class="row">
                                                 <div class="col-md-4 col-xs-12 col-sm-12 col-lg-4">
                                                     <div class="form-group">
                                                         <label class="gfield_label" for="exampleFormControlInput1">How much money do you need?<span class='gfield_required'>*</span></label>
-                                                        <input type="tel" class="form-control" autocomplete="off" id="exampleFormControlInput1">
+                                                        <input type="tel" class="form-control" name="how_much_money_you_need" autocomplete="off" id="exampleFormControlInput1">
                                                     </div>
                                                 </div>
                                                 <div class="col-md-4 col-xs-12 col-sm-12 col-lg-4">
                                                     <div class="form-group">
                                                         <label class="gfield_label" for="exampleFormControlInput1">
-                                                            What was the date of your accident?*<span class='gfield_required'>*</span></label>
-                                                        <input type="text" class="form-control" autocomplete="off" id="exampleFormControlInput1">
+                                                            What was the date of your accident?<span class='gfield_required'>*</span></label>
+                                                        <input type="text" class="form-control" name="date_of_accident" autocomplete="off" id="exampleFormControlInput1">
                                                     </div>
                                                 </div>
                                                 <div class="col-md-4 col-xs-12 col-sm-12 col-lg-4">
                                                     <div class="form-group">
                                                         <div class="form-check form-check-inline">
-                                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                                            <input class="form-check-input" name="" type="checkbox" id="inlineCheckbox1" value="option1">
                                                             <label class="form-check-label" for="inlineCheckbox1">Unknown date</label>
                                                           </div>
                                                     </div>
@@ -91,7 +86,7 @@
                                                 <div class="col-md-4 col-xs-12 col-sm-12 col-lg-4">
                                                     <div class="form-group">
                                                         <label class="gfield_label" for="exampleFormControlSelect1">What state is your case in<span class='gfield_required'>*</span></label>
-                                                            <select class="form-control" id="exampleFormControlSelect1">
+                                                            <select class="form-control" id="exampleFormControlSelect1" name="what_state_case">
                                                             <option>Select One</option>
                                                             <option>2</option>
                                                             <option>3</option>
@@ -107,7 +102,7 @@
                                                 <div class="col-md-4 col-xs-12 col-sm-12 col-lg-4">
                                                     <div class="form-group">
                                                         <label class="gfield_label" for="exampleFormControlInput2">What kind of case do you have<span class='gfield_required'>*</span></label>
-                                                        <select class="form-control" id="exampleFormControlInput2">
+                                                        <select class="form-control" id="exampleFormControlInput2" name="case_type_id">
                                                             <option>Select One</option>
                                                             <option>2</option>
                                                             <option>3</option>
@@ -121,7 +116,7 @@
                                                     <div class="form-group">
                                                         <label class="gfield_label" for="exampleFormControlInput3">
                                                             How did you hear about Oasis?<span class='gfield_required'>*</span></label>
-                                                            <select class="form-control" id="exampleFormControlInput3">
+                                                            <select class="form-control" id="exampleFormControlInput3" name="hear_about_us_id">
                                                                 <option>Select One</option>
                                                                 <option>2</option>
                                                                 <option>3</option>
@@ -138,13 +133,13 @@
                                                 <div class="col-md-4 col-xs-12 col-sm-12 col-lg-4">
                                                     <div class="form-group">
                                                         <label class="gfield_label" for="exampleFormControlEmailInput1">Email<span class='gfield_required'>*</span></label>     
-                                                        <input type="email" class="form-control" autocomplete="off" id="exampleFormControlEmailInput1">
+                                                        <input type="email" class="form-control" autocomplete="off"name="email" id="exampleFormControlEmailInput1">
                                                     </div>
                                                 </div>
                                                 <div class="col-md-4 col-xs-12 col-sm-12 col-lg-4">
                                                     <div class="form-group">
                                                         <label class="gfield_label" for="exampleFormControlPhone">Phone<span class='gfield_required'>*</span></label>
-                                                        <input type="tel" class="form-control" value="(018) 607-4802" autocomplete="off" id="exampleFormControlPhone">
+                                                        <input type="tel" class="form-control" name="phone" value="(018) 607-4802" autocomplete="off" id="exampleFormControlPhone">
                                                         <small>
                                                             <p class="description">By providing your phone number on this application, you consent to receive autodialed informational phone calls to the number you provided to Oasis about the status of your application or related funding.</p>
                                                         </small>

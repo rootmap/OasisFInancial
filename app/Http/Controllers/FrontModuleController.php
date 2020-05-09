@@ -67,6 +67,21 @@ class FrontModuleController extends Controller
         return view('site.pages.complete-application');
     }
 
+    public function structuredsettlementapplicationform()
+    {
+        return view('site.pages.structured-settlement-application-form');
+    }
+
+    public function inheritancefunding()
+    {
+        return view('site.pages.inheritance-funding');
+    }
+
+    public function needanattorney()
+    {
+        return view('site.pages.need-an-attorney');
+    }
+
     /**
      * Show the form for creating a new resource.
      *
